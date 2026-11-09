@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>MocoNotch installieren</title>
+<style>
+  :root {
+    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
+    --accent: #0a84ff; --accent-text: #ffffff; --line: #d2d2d7; --warn-bg: #fff4e0; --warn-line: #f0c27a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000; --card: #1c1c1e; --text: #f2f2f7; --muted: #a1a1a6;
+      --accent: #0a84ff; --accent-text: #ffffff; --line: #38383a; --warn-bg: #2a2114; --warn-line: #6b5329;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 40px 16px 64px; background: var(--bg); color: var(--text);
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 620px; margin: 0 auto; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; margin-bottom: 18px; }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-text); text-decoration: none;
+    font-weight: 600; padding: 12px 22px; border-radius: 10px;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .meta { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+  h2 { font-size: 18px; margin: 0 0 12px; }
+  ol { margin: 0; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: 0; }
+  .warn { background: var(--warn-bg); border-color: var(--warn-line); }
+  code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MocoNotch</h1>
+  <p class="lead">Zeiterfassung mit Moco an der Mac-Notch.</p>
+
+  <div class="card">
+    <a class="btn" href="MocoNotch-2026.11.09-2611091223.zip">MocoNotch laden</a>
+    <p class="meta">Version 2026.11.09 (Build 2611091223) · Mac mit Apple-Chip (M1 oder neuer), macOS 13 oder neuer</p>
+  </div>
+
+  <div class="card">
+    <h2>Installieren</h2>
+    <ol>
+      <li>Die Zip-Datei öffnen (Doppelklick) und <strong>MocoNotch</strong> in den Ordner <strong>Programme</strong> ziehen.</li>
+      <li>MocoNotch aus „Programme“ starten. macOS meldet beim ersten Mal, dass die App nicht überprüft werden kann. Dann: <strong>Systemeinstellungen → Datenschutz &amp; Sicherheit</strong>, ganz unten bei „MocoNotch“ auf <strong>„Dennoch öffnen“</strong> klicken.</li>
+      <li>In den Einstellungen deinen <strong>persönlichen Moco-API-Key</strong> eintragen (Moco → Profil → Reiter „Integrationen“). Er wird nur im Schlüsselbund deines Macs gespeichert.</li>
+      <li>Fragt macOS nach dem Schlüsselbund oder dem Kalender, jeweils <strong>„Immer erlauben“</strong> bzw. „Zugriff erlauben“ wählen.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Updates</h2>
+    <p style="margin:0">Neue Versionen meldet die App selbst. Über das Zahnrad → „Nach Updates suchen …“ kannst du jederzeit nachsehen und mit <strong>„Installieren und neu starten“</strong> aktualisieren. Du musst nichts mehr herunterladen.</p>
+  </div>
+
+  <div class="card warn">
+    <h2>Gut zu wissen</h2>
+    <p style="margin:0">Die App ist ein internes Werkzeug von VHUG und noch nicht mit einem Apple-Entwicklerkonto signiert, deshalb die Warnung beim ersten Start. Moco-Zugangsdaten sind nicht in der Datei enthalten.</p>
+  </div>
+</main>
+</body>
+</html>
